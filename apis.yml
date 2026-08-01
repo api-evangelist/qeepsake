@@ -1,7 +1,23 @@
 aid: qeepsake
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/qeepsake.png
 name: Qeepsake
-description: Qeepsake is a company surfaced as a portfolio company of techstars and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Qeepsake is a family memory-keeping and baby-journaling service that helps parents capture
+  their children's milestones and everyday moments by responding to scheduled text prompts or free-journaling
+  in the mobile app, then turning those entries into digital and printed family storybooks. Operated by
+  Tinybeans USA Ltd, Qeepsake is a consumer mobile application (iOS and Android) with membership tiers; it
+  publishes no public API, developer portal, or SDK. This profile was surfaced as a Techstars portfolio
+  company and enriched with an identity and domain-security pass.
 url: https://raw.githubusercontent.com/api-evangelist/qeepsake/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Consumer
+- Mobile Apps
+- Journaling
+- Family
+- Parenting
+- Memory Keeping
+- Photo Books
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/qeepsake-domain-security.yml
 - type: Website
   url: https://qeepsake.com/
+- type: Support
+  url: https://help.qeepsake.com/
+- type: Pricing
+  url: https://qeepsake.com/pages/pricing
+- type: PrivacyPolicy
+  url: https://qeepsake.com/pages/privacy-policy
+- type: TermsOfService
+  url: https://qeepsake.com/pages/terms-of-service
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
